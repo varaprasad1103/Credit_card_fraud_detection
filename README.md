@@ -1,56 +1,70 @@
-# Credit_card_fraud_detection
+# Credit Card Fraud Detection
 
 ## Overview
-This project implements a Credit Card Fraud Detection system using multiple machine learning algorithms. The model is trained on a dataset of credit card transactions to distinguish between fraudulent and legitimate transactions.
+A machine learning project to detect fraudulent credit card transactions using Python, Pandas, Scikit-learn, NumPy, Matplotlib, and Seaborn.  
+The project uses **Logistic Regression** and **Random Forest** to classify transactions as **Fraudulent (1)** or **Legitimate (0)**.  
+It also provides **real-time prediction** for single transactions.
 
-- [Features](#features)
-- [Dataset](#dataset)
-- [Dependencies](#dependencies)
-- [Prerequisites](#prerequisites)
-- [Installation and setup](#installation-and-setup)
-- [Usage](#usage)
-- [Output](#output)
+---
 
-# Features
-## Machine Learning Models
+## Features
+
+### Machine Learning Models
 - Random Forest Classifier
 - Logistic Regression
-- K-Nearest Neighbors (KNN)
+- K-Nearest Neighbors (optional for experimentation)
 
-# Data Processing
+### Data Processing
 - Feature selection and preprocessing
 - Train-test split for evaluation
-  
-# Evaluation Metrics
 
+### Evaluation Metrics
 - Accuracy score
 - Confusion matrix
 - Classification report
+- ROC-AUC score
 
-# User Input Prediction
+### User Input Prediction
+- Allows manual input of transaction features
+- Predicts fraud probability in real-time
 
-- Takes user input for transaction features
-- Predicts if the transaction is fraudulent or not
-  
-# Dataset
-- The dataset should be in CSV format (cdd.csv).
-- The Class column is the target variable (0 = Legitimate, 1 = Fraudulent).
+### Visualizations
+- Fraud vs Non-Fraud distribution
+- Feature correlation heatmap
+- Random Forest feature importance
 
-# Tools and Technologies
-- Python
+---
+
+## Dataset
+- File: `cdd.csv` (CSV format)
+- Target column: `Class`  
+  - 0 → Legitimate  
+  - 1 → Fraudulent
+- Features: `Time`, `Amount`, `V1` - `V28`
+
+---
+
+## Tools and Technologies
+- Python 3.x
 - Pandas
-- Scikit-learn
 - NumPy
+- Scikit-learn
 - Matplotlib
+- Seaborn
 
-# Dependencies
+---
 
-### Following are the major dependencies of the project:
-- pandas
-- scikit-learn
-- numpy
-- matplotlib
+## Dependencies
+```bash
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+joblib
 
+```
+---
 # Prerequisites
 - Python must be installed on the system.
 - You should have the dataset (cdd.csv).
@@ -74,5 +88,5 @@ python fraud_detection.py
 - The user can input transaction details for real-time fraud detection.
 
 # Output
-![image](https://github.com/user-attachments/assets/04516370-8066-4b8e-87c5-fe3ddb806475)
+![image]()
 
