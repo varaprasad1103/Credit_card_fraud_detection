@@ -118,7 +118,28 @@ Classification Report:
 Accuracy: 0.97
 ROC-AUC Score: 1.0
 
+
+```
+
+---
+![image](https://github.com/varaprasad1103/Credit_card_fraud_detection/blob/main/Screenshot%202025-10-16%20210610.png?raw=true)
+![image](https://github.com/varaprasad1103/Credit_card_fraud_detection/blob/main/Screenshot%202025-10-16%20210724.png?raw=true)
+![image](https://github.com/varaprasad1103/Credit_card_fraud_detection/blob/main/Screenshot%202025-10-16%20210755.png?raw=true)
+```python
+
 Prediction Example:
 Prediction: Legitimate
 Probability of Fraud: 0.2200
+
+Prediction: Legitimate
+Probability of Fraud: 0.2200
+cdd.zip
+cdd.zip(application/x-zip-compressed) - 32176 bytes, last modified: 10/16/2025 - 100% done
+Saving cdd.zip to cdd (2).zip
+Prediction	Fraud Probability
+0	            Fraud	0.89
+1	            Fraud	0.90
+2	            Fraud	0.87
+3	            Legitimate	0.17
+4	            Fraud	0.88
 
