@@ -82,11 +82,43 @@ git clone https://github.com/Credit_card_fraud_detection
 ```sh
 python fraud_detection.py
 ```
-# Usage
-- Upload the dataset (cdd.csv).
-- The script will train multiple machine learning models and evaluate their performance.
-- The user can input transaction details for real-time fraud detection.
-
+## Usage
+- Run notebook `Credit_Card_Fraud_Detection.ipynb` or script `fraud_detection.py`
+- Manual prediction example:
+```python
+sample_transaction = {'Time': 10000, 'V1': -1.35, 'V2': -0.07, 'V3': 2.53, 'Amount': 149.62, ...}
+prediction, probability = predict_fraud(sample_transaction, model='rf')
+print(prediction, probability)
 # Output
-![image]()
+
+
+Example Evaluation Output (from training & testing):
+
+----- Logistic Regression Evaluation -----
+Accuracy: 0.925
+Confusion Matrix:
+ [[17  2]
+ [ 1 20]]
+Classification Report:
+               precision    recall  f1-score   support
+           0       0.94      0.89      0.92        19
+           1       0.91      0.95      0.93        21
+Accuracy: 0.93
+ROC-AUC Score: 0.9148
+
+----- Random Forest Evaluation -----
+Accuracy: 0.975
+Confusion Matrix:
+ [[18  1]
+ [ 0 21]]
+Classification Report:
+               precision    recall  f1-score   support
+           0       1.00      0.95      0.97        19
+           1       0.95      1.00      0.98        21
+Accuracy: 0.97
+ROC-AUC Score: 1.0
+
+Prediction Example:
+Prediction: Legitimate
+Probability of Fraud: 0.2200
 
